@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<title>Bcomendul</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.w3-hover-opacity{
+  border-radious:50%
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('img5.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("img3.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("img4.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1200px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#coursework" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> COURSEWORK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="#coursework" class="w3-bar-item w3-button" onclick="toggleFunction()">COURSEWORK</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BENNETT<span class="w3-hide-small"> </span> COMENDUL</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love a challenge</em></p>
+  <p>I graduated of the University of Connecticut with a B.S in Environmental Science and Resource Economics in 2016. After graduation, I accumulated over three years of professional work experience with Power Home Remodeling as a Direct Marketer and Salesman. During my tenure, I received multiple promotions with progressively increasing performance expectations and supervisory responsibilities. I moved from Connecticut to San Diego in February of 2020. During the subsequent quarantine period, I passed the Securities Industry Essentials (SIE) exam, received an Advanced Google Analytics Certification, completed AWS training, learned multiple programming languages (Python, Java, R, Javascript, SQL, HTML, CSS), and completed masters level Data Science/Business Analytics coursework from top Universities. Most recently, I earned an official MicroMasters in Business Analytics from my coursework with Columbia University Professors. Additionally, I am mid-way through a MicroMasters in Data Science from my coursework with MIT professors.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><a href="https://www.linkedin.com/in/bennett-comendul/"><i class="fab fa-linkedin w3-margin-right"></i>Bennett Comendul</a></p><br>
+      <img src="img6.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>TIMING IS EVERYTHING.</p>
+      <p>I made the decision to move to San Diego, CA at the end of 2019. My girlfriend and I officially moved into our appartment on March 6, 2020. Within two weeks we were in a total lockdown from the Coronavirus... So, as the job market tighted, I decided to aggressively pursue new skills that could be learned from home.</p>
+      <p>Analytical work was always a strength of mine and Data Science is a massively expanding field. It was an easy choice for me to venture into computational analytics. The skillset seemed to require a deep understanding of Computer Science, Programming, Statistics and Calculus. So, those were the areas I started in!</p>
+      <p>Over time, as my skills developed, I began to push into increasingly complicated topics. Some of the assignments and projects I completed during my coursework include: Neural Networks with backpropogation, Convolutional Neural Networks, CNN with Pytorch and Tensorflow, Principal Component Analysis (Netflix Challenge winning Algorithm), Maximum Liklihood Estimations, Sentiment Analysis (Natrual Language Processing), Web Scraping, Recurrent Neural Networks, and many, many more. </p>
+      <p>Links below can be used to navigate to some of my personal side-projects. These projects were selected to demonstrate particular skills or algorithms that are both practical and efficient. All of the projects were written by myself in a variety of programming languages. These are just a few of the projects I have completed, for clarity, I have chosen not to include any coding projects that were direct assignments from my coursework.</p>
+
+    </div>
+  </div>
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">PROJECTS</h3>
+    <p class="w3-center"><em>Some Projects Completed Outside of Coursework</em></p>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <a href="https://bcomendul.github.io/Ratio_Analysis/">Ratio Analysis
+          <img src="img4.jpg" style="width:100%" class="w3-hover-opacity" alt="Empty ghost train">
+        </a>    </div>
+
+      <div class="w3-col m3">
+        <a href="https://bcomendul.github.io/K-Means-Clustering-Demo/">Clustering
+          <img src="img5.jpg" style="width:100%" class="w3-hover-opacity" alt="Empty ghost train">
+        </a>    </div>
+
+      <div class="w3-col m3">
+        <a href="https://bcomendul.github.io/BlackJack/">Reinforcement Learning
+          <img src="img5.jpg" style="width:100%" class="w3-hover-opacity" alt="Empty ghost train">
+        </a>        </div>
+
+      <div class="w3-col m3">
+        <a href="https://angmcguire.github.io/">Tutoring Site
+          <img src="img7.jpg" style="width:100%" class="w3-hover-opacity" alt="Empty ghost train">
+        </a>    </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <a href="https://bcomendul.github.io/Naive-Bayes-Demo/">Naive Bayes
+          <img src="img1.jpg" style="width:100%" class="w3-hover-opacity" alt="Empty ghost train">
+        </a>    </div>
+
+      <div class="w3-col m3">
+        <a href="https://github.com/BComendul/StingMath/blob/main/StringMath.java">String Math
+          <img src="img2.jpg" style="width:100%" class="w3-hover-opacity" alt="Empty ghost train">
+        </a>    </div>
+
+      <div class="w3-col m3">
+        <a href="https://github.com/BComendul/MineSweeper_Solver_Java/blob/main/MineSweeper.java">MineSweeper
+          <img src="img4.jpg" style="width:100%" class="w3-hover-opacity" alt="Empty ghost train">
+        </a>      </div>
+
+      <div class="w3-col m3">
+        <a href="https://bcomendul.github.io/FourthDown/">FourthDown
+          <img src="img4.jpg" style="width:100%" class="w3-hover-opacity" alt="Empty ghost train">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="w3-large w3-center w3-padding-16">Technical Skills</p>
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <grid >
+
+    <p class="w3-wide"><i class="fab fa-python"></i>Python</p>
+    <p class="w3-wide"><i class="fab fa-java"></i>Java</p>
+    <p class="w3-wide"><i class="fab fa-r-project"></i>R Studio</p>
+    <p class="w3-wide"><i class="fa fa-code"></i>Coding</p>
+    </grid>
+          </div>
+
+    <div class="w3-col m3">
+      <grid>
+        <p class="w3-wide"><i class="fa fa-users"></i>Leadership</p>
+        <p class="w3-wide"><i class="fas fa-brain"></i>Machine Learning</p>
+        <p class="w3-wide"><i class="fas fa-ad"></i>Marketing</p>
+        <p class="w3-wide"><i class="fas fa-search-dollar"></i>Sales</p>
+      </grid>
+    </div>
+
+    <div class="w3-col m3">
+      <grid>
+        <p class="w3-wide"><i class="fa fa-calculator"></i>Calculus</p>
+        <p class="w3-wide"><i class="fa fa-chart-line"></i>Plotting</p>
+        <p class="w3-wide"><i class="fa fa-dollar-sign"></i>Finance</p>
+        <p class="w3-wide"><i class="fa fa-percent"></i>Probability</p>
+      </grid>
+    </div>
+
+    <div class="w3-col m3">
+      <grid>
+        <p class="w3-wide"><i class="fab fa-aws"></i>AWS</p>
+        <p class="w3-wide"><i class="fab fa-google"></i>Analytics</p>
+        <p class="w3-wide"><i class="fa fa-table"></i>SQL</p>
+        <p class="w3-wide"><i class="fa fa-database"></i>noSQL</p>
+
+
+      </grid>
+    </div>
+  </div>
+
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4+</span><br>
+    Years Working
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5+</span><br>
+    Promotions
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">10+</span><br>
+    Professional Certificates
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">30+</span><br>
+    Projects Completed
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="coursework">
+  <h3 class="w3-center">POST-GRADUATE COURSEWORK</h3>
+  <p class="w3-center"><em>Courses Completed after graduating from UConn</em></p>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <div><strong>Computational Thinking using Python 1 & 2</strong> with John Guttag, profeessor and former head of the department of Electrical Engineering and Computer Science at MIT.</div>
+      </div>
+
+    <div class="w3-col m3">
+      <div><strong>Data Science: R</strong> with Rafael Irizarry, Professor of Biostatistics at Harvard University.</div>
+      </div>
+
+    <div class="w3-col m3">
+      <div><strong>Machine Learning with Python</strong> with Regina Barzilay, Professor of Electrical Engineering and Computer Science at MIT and 2020 winner of Squirrel Award Grant for Advancements in Artificial Intelligence</div>
+        </div>
+
+    <div class="w3-col m3">
+      <div><strong>Probability-Science of Uncertainty</strong> with John Tsitsiklis, Professor of Electrical Engineering and Computer Science at Massachusetts Institute of Technology.</div>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <div><strong>Analytics in Python</strong> with Hardeep Johar, Professor and Senior Lecturer in Department of Industrial Engineering and Operations Research at Columbia University.</div>
+      </div>
+
+    <div class="w3-col m3">
+      <div><strong>Data, Models and Decisions in Business Analytics</strong> with Costis Maglaras, Professor of Business Decision, Risk and Operations Division at Columbia Graduate School of Business.</div>
+      </div>
+
+    <div class="w3-col m3">
+      <div><strong>Marketing Analytics</strong> with Kamel Jedidi, Professor of Business and Chair of the Marketing Division at Columbia University.</div>
+        </div>
+
+    <div class="w3-col m3">
+      <div><strong>Supply and Demand Analytics</strong> with Daniel Guetta, Director of the Business Analytics Initiative at Columbia University.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">Let's Chat</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="img2.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>302 Island ave San Diego, CA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (203) 927-4688<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: bcomendul@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <div>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input id="name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input id="email" class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <textarea id="note" class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea>
+        <button class="w3-button w3-black w3-right w3-section" onClick="sendMessage();">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+
+</footer>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+function sendMessage(){
+    var email=document.getElementById("email").value;
+    var name=document.getElementById("name").value;
+    var note=document.getElementById("note").value;
+    document.getElementById("email").value="";
+    document.getElementById("name").value="";
+    document.getElementById("note").value="";
+      // instantiate a headers object
+    var myHeaders = new Headers();
+    var pack={
+        "firstName":name,
+        "lastName":"",
+        "phone":"",
+        "email":email,
+        "note":note
+      }
+      // add content type header to object
+    myHeaders.append("Content-Type", "application/json");
+      // using built in JSON utility package turn object to string and store in a variable
+    var raw = JSON.stringify(pack);
+      // create a JSON object with parameters for API call and store in a variable
+    var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+    };
+      // make API call with parameters and use promises to get response
+    fetch("https://ik0d2ikzf6.execute-api.us-east-2.amazonaws.com/Dev", requestOptions)
+      .then(response => response.text())
+      .then(result => alert(JSON.parse(result).body))
+      .catch(error => console.log('error', error));
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
